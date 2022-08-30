@@ -6,7 +6,7 @@
 
 <h1 class="text-center">Aplicación .Net 6 MVC</h1>
 
-@if (TempData["Mensaje"]==null)
+@if (TempData["Mensaje"]!=null)
 {
 <div class="alert alert-success alert-dismissible fade show" role="alert">
       @TempData["Mensaje"]
