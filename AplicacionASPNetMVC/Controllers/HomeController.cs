@@ -89,9 +89,9 @@ namespace AplicacionASPNetMVC.Controllers
 
         [ValidateAntiForgeryToken]
         [HttpPost]
-        public async Task<IActionResult> BorrarRegistro(int id)
+        public async Task<IActionResult> Borrar(Usuario usuario)
         {
-            var usuario = await _context.Usuario.FindAsync(id);
+           // var usuario = await _context.Usuario.FindAsync(id);
             if(usuario == null)
             {
                 return NotFound();
